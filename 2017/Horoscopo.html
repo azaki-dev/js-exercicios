@@ -1,0 +1,72 @@
+<html>
+  <head> <title> Exercicio 06 </title>
+   <meta charset="UTF-8"> 
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+   <style> 
+   body {font-family: 'Roboto Condensed', sans-serif;
+   }
+   img {width:100; height:100;}
+   #pisca {
+    color: #fff;
+    transition: color .7s;
+}
+.mostrar {
+    color: #f34 !important;
+}
+   </style>
+   
+<script>
+    function Dobra(img) {
+        img.style.height = "200px";
+        img.style.width = "200px";
+        img.style.borderRadius = "100px";
+        img.style.transition = "1s";
+    }
+
+    function normal(img) {
+        img.style.height = "100px";
+        img.style.width = "100px";
+        img.style.borderRadius = "100px";
+        img.style.transition = "1s";                                  
+    }
+    function Libra(txt){
+        document.getElementById("texto").innerHTML="A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de finalização de projetos de médio prazo, especialmente os que envolvem viagens e contatos com pessoas e empresas estrangeiras. O momento pode envolver a decisão de dedicar-se mais à sua vida espiritual. Marte deixa Libra e começa a caminhar através de Escorpião movimentando intensamente sua vida material e financeira. O momento pede contenção de gastos, pois você pode deparar-se com imprevistos financeiros. O dinheiro chega com mais facilidade, mas é hora de economizar.";
+    }
+    function Escorpio(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de de colocar pontos finais em negociações envolvendo uma sociedade ou parceria financeira. Suas emoções podem estar à flor da pele. Procure não mergulhar tão profundamente nesse mar de sentimentos. Marte deixa Libra e começa a caminhar através de seu signo marcando o início de um período de maior assertividade e determinação, na vida pessoal e profissional. Tome cuidado com os excessos, especialmente com a agressividade.";
+    }
+    function Capricornio(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de trabalho intenso e finalização de projetos. O momento é bom para retomar exercícios e projetos de melhoria da saúde. Um processo de seleção para um novo emprego pode ser finalizado. Marte deixa Libra e começa a caminhar através de Escorpião movimentando intensamente sua vida social. O momento envolve intensa atividade e compromissos sociais, que podem tirar seu humor. Bom momento para contatos comerciais, que certamente resultarão em novos contratos.";
+    }
+    function Geminis(){
+        document.getElementById("texto").innerHTML= "A semana começa com a Lua continuando seu ciclo e ela entra na fase Cheia em seu signo, chega em tenso aspecto com Netuno e Vênus indicando a finalização de um processo envolvendo um projeto pessoal ou profissional. Um relacionamento pode finalizar um ciclo e começar outro nos próximos dias. O momento deixa suas emoções à flor da pele.";
+    }
+    function Piscis(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de intensidade emocional e necessidade de distanciar-se da vida social. Você estará mais caseiro e voltado para sua vida doméstica e familiares. O momento envolve interiorização e reflexão. Marte deixa Libra e começa a caminhar através de Escorpião movimentando projetos de médio prazo, especialmente os que envolvem viagens internacionais e pessoas estrangeiras. Você pode estar decidido a se mudar de país, ou ao menos fazer um curso fora.";
+    }
+    function Sagitario(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de movimento intenso na vida social e aproximação dos amigos. O momento pode envolver a finalização de negociações envolvendo uma sociedade ou parceria comercial. Um namoro pode começar. Marte deixa Libra e começa a caminhar através de seu signo derrubando sua energia vital. Nesta fase, que atravessa o mês, você deve diminuir o ritmo, especialmente dos exercícios e priorizar os cuidados com a saúde. Evite pessoas e ambientes negativos.";
+    }
+    function Tauro(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de movimento em sua vida material e financeira. O período pode envolver a finalização e assinatura de um contrato de trabalho relacionando o aumento de seus rendimentos. Marte deixa Libra e começa a caminhar através de Escorpião movimentando intensamente seus relacionamentos pessoais e profissionais. Você estará mais assertivo e deve tomar cuidados redobrados com a agressividade, sua e das pessoas em seu entorno.";
+    }
+    function Virgo(){
+        document.getElementById("texto").innerHTML= "A semana começa influenciada pela Lua Cheia em Gêmeos, que chega em tenso aspecto com Netuno indicando dias de finalização de projetos que envolvem seu caminho profissional, que pode dar um passo à frente. O momento pode envolver também a finalização de uma negociação envolvendo uma promoção ou aprovação de um projeto. Marte deixa Libra e começa a caminhar através de Escorpião movimentando intensamente sua mente. Cuide dos excessos, especialmente de pensamentos que elevam sua ansiedade. Tome cuidados redobrados com atitudes impulsivas.";
+    }
+</script>
+</head>
+<body bgcolor="black">
+    <center>
+        <img onclick="Libra()"onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/libra.jpg"> </img>
+        <img onclick="Escorpio()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/escorpio.jpg"> </img>
+        <img onclick="Capricornio()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/capricornio.jpg"> </img>
+        <img onclick="Geminis()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/geminis.jpg"> </img>
+        <img onclick="Piscis()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/piscis.jpg"> </img>
+        <img onclick="Sagitario()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/sagitario.jpg"> </img>
+        <img onclick="Tauro()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/tauro.jpg"> </img>
+        <img onclick="Virgo()" onmouseover="Dobra(this)" onmouseout="normal(this)" src="Signos/virgo.jpg"> </img>
+    </center>
+    <br> <br> <br> <br> <br>
+    <center> <p style="color:#ffbb3f; font-size:25px;" id="texto"> HORÓSCOPO DA SEMANA </P> </center>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+  <head> <title> Exercicio 05 </title>
+   <meta charset="UTF-8"> 
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+   <style> 
+    body {background: url("Quadros/background.jpg") no-repeat fixed ;	
+	font-family: 'Roboto Condensed', sans-serif;}
+     #box{
+	 width:1000px;
+	 height:600px;
+	 background-color:white;
+	 border: 10px solid;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	 border-color:white;
+	 border: thin solid;
+	 }
+	 img {
+	 transition-duration:3s;
+	 opacity: 0.9;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	 border-color:white;
+	 border: thin solid;
+	 }
+	 img:hover {
+	 opacity: 0.5;
+	 transition-duration:1s;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	 border-color:white;
+	 border: thin solid;
+	 }
+   </style>
+
+     <script>
+      function quadro1(){
+	   document.getElementById('imagem').src='Quadros/quadro 1.png'
+	   document.getElementById('sudo').style.background="url('Quadros/tg.png') no-repeat";
+	  }
+	   function quadro2(){
+	   document.getElementById('imagem').src='Quadros/quadro 2.png'
+	   document.getElementById('sudo').style.background="url('Quadros/madoka 3.jpg') no-repeat fixed center";
+	  }
+	   function quadro3(){
+	   document.getElementById('imagem').src='Quadros/quadro 3.png'
+	   document.getElementById('sudo').style.background="url('Quadros/madoka.png') no-repeat fixed center";
+
+	  }
+	   function quadro4(){
+	   document.getElementById('imagem').src='Quadros/quadro 4.png'
+   	   document.getElementById('sudo').style.background="url('Quadros/my hero.jpg') no-repeat fixed center";
+	  }
+	   function quadro5(){
+	   document.getElementById('imagem').src='Quadros/quadro 5.png'
+	   document.getElementById('sudo').style.background="url('Quadros/madoka 2.jpg') no-repeat fixed center";
+	  }
+	 </script>
+	 
+  </head>
+   <body id="sudo">
+    <center> 
+      <div id="box"> 
+       <h1 style="font-size:30px;"> Quadros de Anime </h1>
+         <img src="Quadros/quadro 1.png" width="550" height="300" id="imagem"> </img> </br> </br>
+		      <img src="Quadros/quadro 1.png" width="150" height="150" onclick="quadro1()"> </img>
+		      <img src="Quadros/quadro 2.png" width="150" height="150" onclick="quadro2()"> </img>
+              <img src="Quadros/quadro 3.png" width="150" height="150" onclick="quadro3()"> </img>
+              <img src="Quadros/quadro 4.png" width="150" height="150" onclick="quadro4()"> </img>
+              <img src="Quadros/quadro 5.png" width="150" height="150" onclick="quadro5()"> </img>
+
+      </div>
+ 
+    </center>
+   </body>
+</html>
